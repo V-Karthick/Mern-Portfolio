@@ -15,7 +15,7 @@ const Profile = () => {
       </div>
         <div className='h-screen w-[40%]  flex justify-around items-center'>
           <div><Mail className='text-white h-10 w-10' /></div>
-          <iv><Linkedin className='text-white h-10 w-10'/></iv>
+          <div><Linkedin className='text-white h-10 w-10'/></div>
           <div><Github className='text-white h-10 w-10'/></div>
           <div><Phone className='text-white h-10 w-10'/></div>
         </div>
