@@ -12,9 +12,9 @@ const Navbar = () => {
       <div className='h-[90%] w-[90%] flex justify-between'>
           <div className='flex items-center text-xl font-bold'>Portfolio</div>
           <div className=' flex items-center justify-end z-50'>
-            <Link className='ml-4 text-xl font-bold' to="/">Profile</Link>
-            <Link className='ml-4 text-xl font-bold' to="/project">Project</Link>
-            <Link className='ml-4 text-xl font-bold' to="/contact">Contact</Link>
+            <Link className='ml-4 text-xl rounded-xl font-bold transition hover:shadow-inner hover:shadow-white px-2 py-2 active:shadow-md acitve:shadow-white' to="/">Profile</Link>
+            <Link className='ml-4 rounded-xl text-xl font-bold transition hover:shadow-inner hover:shadow-white px-2 py-2 active:shadow-md acitve:shadow-white' to="/project">Project</Link>
+            <Link className='ml-4 rounded-xl text-xl font-bold transition hover:shadow-inner hover:shadow-white px-2 py-2 active:shadow-md acitve:shadow-white' to="/contact">Contact</Link>
             <CircleUser className='ml-4 h-10 w-10 text-xl font-bold' onClick={()=>setvisible(!visible)} />
           </div>
       </div>
