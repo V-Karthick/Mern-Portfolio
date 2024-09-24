@@ -1,4 +1,4 @@
-import { CircleUser, Cross } from 'lucide-react'
+import { CircleUser, CircleX, Cross } from 'lucide-react'
 import React, { useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 
@@ -29,7 +29,8 @@ const Navbar = () => {
                                         Login
                                     </div>
                                     <div className="w-1/2 flex justify-end">
-                                        <Cross onClick={() => setvisible(!visible)} />
+                                    <CircleX onClick={() => setvisible(!visible)} />
+                                       
                                     </div>
                                 </div>
                                 <div className="w-full h-[85%] flex flex-row justify-center items-center">

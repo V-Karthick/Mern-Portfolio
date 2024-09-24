@@ -18,17 +18,22 @@ const Project = () => {
       name:"Nilla Blooms",
       des:"A Flower ecommerce website that cloned from official website \"Nilla Blooms\"",
     },
-    
+    {
+      img:bloomsImg,
+      name:"Nilla Blooms",
+      des:"A Flower ecommerce website that cloned from official website \"Nilla Blooms\"",
+    },
     
   ]
   return (
-    <div className='h-screen w-screen flex justify-center items-center bg-black text-white'>
-      <div className='h-[90%] w-[90%] flex flex-col justify-around'>
+    <div className='h-full w-full flex justify-center items-center bg-black text-white'>
+      <div className='h-[90%] w-[90%]  flex flex-col justify-around'>
         <div className='h-[10%] w-[40%]  flex justify-start items-center text-white text-4xl font-bold  '>My Projects!</div>
-        <div className='h-[70%] w-[100%] border-2 border-black flex flex-wrap justify-between'>
+        <div className='h-[80%] w-[100%] p-4 overflow-y-auto no-scrollbar border-2 border-black flex justify-center items-center '>
+        <div className='h-[90%] w-[90%] flex flex-wrap justify-around'>
           {
             data.map((item, index)=>(
-              <div className='h-[80%] w-[30%]   flex flex-col justify-center items-center transition transform hover:scale-110 hover:shadow-lg hover:shadow-white hover:border-white hover:border-2' key={index}>
+              <div className='h-[80%] w-[30%]   flex flex-col justify-center items-center transition transform hover:scale-110 hover:shadow-lg hover:shadow-white hover:border-white hover:border-2 m-3' key={index}>
                 <div className='h-[90%] w-[90%]  flex flex-col justify-between'>
                   <div className='h-[50%]'><img className='w-[100%] h-[100%]' src={item.img}></img></div>
                   <div className='h-[15%] flex justify-center items-center text-white text-2xl font-extrabold  text-center'>{item.name}</div>
@@ -37,6 +42,7 @@ const Project = () => {
               </div>
             ))
           }
+          </div>
         </div>
       </div>
     </div>
